@@ -3,3 +3,8 @@ out
 vendor
 *.swp
 *.jpg
+*.aux
+*.log
+*.out
+*.pdf
+*.toc
