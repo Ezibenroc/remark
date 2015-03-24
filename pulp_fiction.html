@@ -406,14 +406,14 @@ One of the highest-grossing independent movies.
 	<span class="important">Excellent rating</span> (over 90% on rottentomatoes).<br />
 	Excess of violence disappointed some critics.<br />
 </p>
-
+--
 <p>
 <div class="critic">
 "Everyone was trying to do irony and incorrectness,
 but without his brilliance it just looked smug."
 <div style="font-style: italic; text-align: right">(The Guardian)</div><br />
 </p>
-
+--
 <p>
 <div class="critic">
 "Some sequences, [...] have the uncomfortable feeling
@@ -427,8 +427,11 @@ for any  way to offend sensibilities."</div>
 
 <span class="important">26 nominations</span>
 
+--
+
 <span class="important">8 awards</span>
 
+--
 * Academy Awards
     - Best Original Screenplay (Quentin Tarantino and Roger Avary)
 * BAFTA Awards
@@ -457,7 +460,36 @@ Your browser does not support the video tag.
     <script src="out/remark.js" type="text/javascript">
     </script>
     <script type="text/javascript">
-      var slideshow = remark.create();
-    </script>
+    var slideshow = remark.create({
+      // Set the slideshow display ratio
+      // Default: '4:3'
+      // Alternatives: '16:9', ...
+      ratio: '16:9',
+
+      // Navigation options
+      navigation: {
+        // Enable or disable navigating using scroll
+        // Default: true
+        // Alternatives: false
+        scroll: true,
+
+        // Enable or disable navigation using touch
+        // Default: true
+        // Alternatives: false
+        touch: true,
+
+        // Enable or disable navigation using click
+        // Default: false
+        // Alternatives: true
+        click: false
+      },
+
+      // Customize slide number label, either using a format string..
+      slideNumberFormat: '',
+      // .. or by using a format function
+    //   slideNumberFormat: function (current, total) {
+    //     return 'Slide ' + current + ' of ' + total;
+    //   }
+    });    </script>
   </body>
 </html>
